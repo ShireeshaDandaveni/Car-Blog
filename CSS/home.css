@@ -1,0 +1,246 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width:100%;
+    height:94vh;
+    background-color: black;
+    overflow: hidden;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#headerVid{
+    width:100%;
+    filter: brightness(50%);
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#headerArrow,#secArrow1,#secArrow2,#secArrow3,#secArrow4,#secArrow5,#secArrow6,#secArrow7,#secArrow8,#secArrow9,#secArrow10{
+    width:80px;
+    position:absolute;
+    bottom:80px;
+    transition:all 0.25;
+    z-index:3;
+    right:50%;
+}
+#headerArrow:hover,#secArrow1:hover,#secArrow2:hover,#secArrow3:hover,#secArrow4:hover,#secArrow5:hover,#secArrow6:hover,#secArrow7:hover,#secArrow8:hover,#secArrow9:hover,#secArrow10:hover
+{
+    transform:translateY(20px);
+}
+#heading1,#heading2{
+    position:absolute;
+    z-index:3;
+    left:160px;
+    font-size:45px;
+    color:white;
+    letter-spacing: 50px;
+    word-spacing:30px;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'poltawski Nowy',serif;
+}
+#heading2{
+    position:relative;
+    top:70px;
+    left:20px;
+    font-size:25px;
+    color:white;
+    letter-spacing:10px;
+    word-spacing: 20px;
+    text-shadow:5px 5px 5px black;
+    font-family: 'poltawski Nowy',serif;
+    transform:translateY(220px);
+    filter:opacity(0);
+}
+#carAni{
+    width:100%;
+    height:30px;
+    position:absolute;
+    z-index:3;
+    transform:translateX(-1430px);
+}
+#carimg{
+    position:absolute;
+    height:60px;
+    z-index:3;
+    right:0px;
+}
+#sec1,#sec2,#sec3,#sec4,#sec5,#sec6,#sec7,#sec8,#sec9,#sec10{
+    width:100%;
+    height:100vh;
+    background-color:black;
+    position:relative;
+    display:flex;
+    align-items:center;
+   
+}
+#sec2,#sec4,#sec6,#sec8,#sec10{
+    background-color:gray;
+
+}
+
+#secArrow1,#secArrow2,#secArrow3,#secArrow4,#secArrow5,#secArrow6,#secArrow7,#secArrow8,#secArrow9,#secArrow10{
+    width:60px;
+}
+
+
+
+.cars{
+    background-image: url(../Asset/images/BMW\ X5Car.webp);
+   
+    background-size: 100% 100%;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    height:65vh;
+    width:50%;
+    position:absolute;
+    right:0px;
+    /* clip-path: polygon(34% 0,100% 0%,100% 100%, 0% 100%); */
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    transition:background-size 0.2s,background-position 0.2s;
+}
+.cars:hover{
+   
+    background-size:120% 120%;
+
+
+}
+.carPara{
+    color:white;
+    width:40vw;
+    padding:0px 30px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-indent: 50px;
+    text-align:justify;
+    position:absolute;
+    top:40vh;
+    cursor:default;
+    
+}
+.carsName{
+    color:lawngreen;
+    font-size: 60px;
+    position:absolute;
+    letter-spacing: 2px;
+    cursor:default;
+    top:18vh;
+    left:20px;
+    font-family: 'poltawski Nowy',serif;
+    
+}
+#car2Name,#car4Name,#car6Name,#car8Name,#car10Name{
+    color:purple;
+}
+#car2Para,#car4Para,#car6Para,#car8Para,#car10Para{
+    color:black;
+   
+}
+#car2{
+    background-image:url(../Asset/images/AudiA4.jpg);
+}
+#car3{
+ background-image:url(../Asset/images/supraCar.jpg);
+}
+#car4{
+    background-image:url(../Asset/images/land-rover.jpg); 
+}
+#car5{
+    background-image:url(../Asset/images/BMW\ Z4mediterranean-blue-metallic.webp); 
+}
+#car6{
+    background-image:url(../Asset/images/FerrariCar.avif); 
+}
+#car7{
+    background-image:url(../Asset/images/LamborghiniCar.jpg); 
+}
+#car8{
+    background-image:url(../Asset/images/Rolls-Royce.webp); 
+}
+#car9{
+    background-image:url(../Asset/images/Toyota_FortunerCar.jpg); 
+}
+#car10{
+    background-image:url(../Asset/images/Land\ Rover\ Defender\ .jpg); 
+}
+
+footer{
+    width:100vw;
+    /* height:9vh; */
+    background-color:white;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    bottom:0px;
+    position:fixed;
+}
+.logo{
+    padding-left:30px;
+    width:30px;
+    padding-bottom:5px;
+    padding-top:10px;
+    transition:transform 0.2s;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+#logout{
+    position:absolute;
+    font-size:18px;
+    top:25px;
+    right:40px;
+    color:black;
+    z-index:3;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition:transform 0.2s;
+}
+#logout:hover{
+    transform:scale(1.2);
+}
+#navigation{
+    width:100vw;
+    height:8vh;
+    background-color:white;
+    color:black;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-decoration-line: none;
+    position:fixed;
+    z-index:5;
+   
+}
+#navigation a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+    font-size: 30px;
+    
+}
+#Home,#Gallery,#about{
+    color:black;
+    text-decoration: none;
+}
+#arrow{
+    width:50px;
+    height:80px;
+    position:absolute;
+    right:20px;
+    bottom:50px;
+    position:fixed;
+    scroll-behavior: smooth;
+ }
+
+     
+   
